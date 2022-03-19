@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex - LaunchX</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <link rel="shortcut icon" href="images/Pokeball.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body style="background-image: url('./images/fondo.jpg');">
+
+  <link rel="stylesheet" href="./assets/styles/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <div class="text-center">
+    <img src="./images/tituloPokedex.png" style="width: 25rem;" class="card-img-top rounded" alt="...">
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 30rem;background-color: #de3539;">
+          <div class="text-center">
+            <img src="./images/pokedex2.png" style="width: 25rem;" class="card-img-center center-img" alt="...">
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title text-white">Introduzca el nombre o número de Pokémon</h5>
+
+            <div class="input-group mb-3">
+
+              <input class="form-control" type="text" name="" id="pokemonName">
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-primary border-dark" id="searchPokemon"><i
+                    class="fa fa-search"></i></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm">
+        <div class="row text-center">
+
+          <div class="card mb-3" style="width: 30rem;background-color: #de3539;">
+            <div class="row no-gutters">
+              <div class="col-md-4 text-center">
+                <div class="text-center">
+                  <img id="imagen" src="./images/Pokeball.ico" class="card-img-top img-thumbnail" alt="...">
+                </div>
+                
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <table class="table " style="color:white;background-color: #3d3d3d;">
+                      <tbody>
+                        <tr>
+                          <th scope="row">Nombre</th>
+                          <td>
+                            <div id="nombre" name="nombre"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Id</th>
+                          <td id="id"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Tipo</th>
+                          <td id="tipo"></td>
+                        </tr>
+      
+                      </tbody>
+                    </table>
+                    
+                    </p>
+
+                </div>
+              </div>
+            </div>
+              <div class="card" style="background-color: #de3539; color:white">
+                <div class="card-body ">
+                  <h5 class="card-title">Estadisticas</h5>
+                  <p class="card-text">
+                    <div class="row">
+                      <div class="col"></div>
+                      <div class="col">
+                            <table class="table table-sm table-responsive text-center" style="color:white;background-color: #3d3d3d;">
+                              <tbody>
+          
+                                <tr>
+                                  <th scope="row">HP</th>
+                                  <td id="hp"></td>
+                                  <th scope="row">Ataque Esp.</th>
+                                  <td id="aespecial"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Ataque</th>
+                                  <td id="ataque"></td>
+                                  <th scope="row">Defensa Esp.</th>
+                                  <td id="despecial"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Defensa</th>
+                                  <td id="defensa"></td>
+                                  <th scope="row">Velocidad</th>
+                                  <td id="velocidad"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+          
+                      </div>
+                      <div class="col"></div>
+                    </div>
+                    
+                  </p>
+                </div>
+              </div>
+              
+          </div>
+
+          <!-- <div class="card" style="width: 18rem;">
+            <img id="imagen" src="./images/Pokeball.ico" class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+              <p class="card-text">
+              <table class="table ">
+                <tbody>
+                  <tr>
+                    <th scope="row">Nombre</th>
+                    <td>
+                      <div id="nombre" name="nombre"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Id</th>
+                    <td id="id"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tipo</th>
+                    <td id="tipo"></td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <div class="text-center">
+                <h3>Estadisticas</h3>
+                <div>
+                  <table class="table table-sm table-responsive text-center">
+                    <tbody>
+
+                      <tr>
+                        <th scope="row">HP</th>
+                        <td id="hp"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ataque</th>
+                        <td id="ataque"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Defensa</th>
+                        <td id="defensa"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ataque Esp.</th>
+                        <td id="aespecial"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Defensa Esp.</th>
+                        <td id="despecial"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Velocidad</th>
+                        <td id="velocidad"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+              </p>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+      <div class="col-sm">
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
